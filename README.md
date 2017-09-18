@@ -1,12 +1,25 @@
-See [Main Readme](sample-chart/README.md)
+solas-chart
+-----------
 
----
+`solas-chart` is scaffolding for new chart repositories hosted by Samsung CNCT. It implements our best practices, such as one chart per repo, seperate repos for charts and container images (see https://github.com/samsung-cnct/solas-container), CI for all the things, and so on.
 
-Using template-chart
-====================
+SOLAS is also an international maritime treaty to ensure ships comply with minimum safety standards in construction, equipment and operation.
 
-First, clone this repo to be named chart-${new_repo_name} and check it out
-(eg chart-sample-chart).
+# Quickstart
+
+- The name of chart repos should be of the form `chart-${NAME}`. For example, `chart-sample` is the name of the chart which installs an application named `sample`.
+- [Create](https://help.github.com/articles/creating-a-new-repository/) a new empty repo under the `samsung-cnct` [org](https://github.com/samsung-cnct) using the GitHub GUI, for example https://github.com/samsung-cnct/chart-sample .
+- [Duplicate](https://help.github.com/articles/duplicating-a-repository/) this repo (https://github.com/samsung-cnct/solas-chart) and push it to the `chart-sample` repo you created in the previous step. Note the arguments to clone and push.
+
+```
+git clone --bare https://github.com/samsung-cnct/solas-chart.git
+cd solas.git
+git push --mirror https://github.com/samsung-cnct/chart-sample.git
+cd ..
+rm -rf solas-chart.git
+```
+
+- [Fork](https://help.github.com/articles/fork-a-repo/) the `chart-sample` repo (https://github.com/samsung-cnct/chart-sample) and begin submiitting PRs.
 
 Copy in your source chart
 -------------------------
