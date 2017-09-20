@@ -21,16 +21,23 @@ rm -rf solas-chart.git
 
 - [Fork](https://help.github.com/articles/fork-a-repo/) the `chart-sample` repo (https://github.com/samsung-cnct/chart-sample) and begin submiitting PRs.
 
-Copy in your source chart
--------------------------
+# Copy in your source chart
 
 Create a subdirectory with the name of your chart (eg sample-chart) in which
 you put the contents of your chart.
 
-Edit README.md
---------------
+# Edit README.md
 
 Edit README.md, changing the chart name in the first line and deleting
 everything below.
 
 Continue to the [documentation](docs/README.md).
+
+# Best Practices
+
+> Group related objects into a single file whenever it makes sense. One file is often easier to manage than several.
+
+> Define and use labels that identify semantic attributes of your application or deployment. [For example,] `{ app: myapp, tier: frontend, phase: test, deployment: v3 }`.
+
+ - [Configuration Best Practices](https://kubernetes.io/docs/concepts/configuration/overview/)
+
