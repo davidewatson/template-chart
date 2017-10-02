@@ -1,3 +1,5 @@
+template-chart is deprecated. Please see [solas-chart](https://github.com/samsung-cnct/solas-chart/) instead.
+
 See [Main Readme](sample-chart/README.md)
 
 ---
